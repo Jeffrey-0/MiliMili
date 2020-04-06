@@ -1,0 +1,139 @@
+*{
+			padding: 0px;
+			margin: 0px;
+			border: black 0px solid;
+		}
+		.context{
+			width: 1200px;
+			margin: 0px auto;
+			/*height: 1300px;*/
+			height: auto;
+			position: relative;
+		}
+		.context_left{
+			position: relative;
+			width: 1200px;
+			height: auto;
+			/*border: black 1px solid ;*/
+		}
+		.context_right{
+
+			position: absolute;
+			top: 0px;
+			width: 300px;
+			height: 1200px;
+			/*border: black 1px solid ;*/
+			right: 0px;
+			background-color: #fff;
+		}
+
+	
+
+
+	  .new_resource_item{
+	  	width: 90%;
+	  	margin: 0px auto;
+	  	height: 100px;
+	  	position: relative;
+
+	  	border-bottom: #f2f2f2 1px solid;
+	  	margin-bottom: 20px;
+	  }
+	  .new_resource_item .resource_pic{
+	  	display: inline-block;
+		width: 55%;
+		height:95%;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 0px;
+	  }
+	  .new_resource_item .right{
+	  	display: inline-block;
+	  	width: 45%;
+	  	height: 95%;
+	  	position: absolute;
+		right: 0px;
+	  }
+	  .new_resource_item .resource_title{
+	  	width: 100%;
+	  	height: 70px;
+
+	  }
+	  .new_resource_item .resource_time{
+	  	width: 100%;
+	  	height: 30px;
+	  	text-align: right;
+	  	color:#999;
+	  }
+
+	  .resource_item{
+	  	background-color: #fff;
+	  	width: 220px;
+	  	height: 320px;
+	  	border: #f2f2f2 1px solid;
+	  	margin-bottom: 10px;
+	  	position: relative;
+	  	display: inline-block;
+	  	margin-right: 18px;
+	  	overflow: hidden;
+	  }
+	   .resource_item .resource_pic{
+	  	display: inline-block;
+	  	width: 190;
+	  	height: 270px;
+	  	/*border: black 1px solid;*/
+	  	margin: 10px;
+		/*position: absolute;*/
+		/*left: 0px;
+		top: 30px;*/
+	  }
+	  .resource_item .resource_title{
+	  	width: 100%;
+	  	height: 30px;
+	  	line-height: 30px;
+	  	font-size: 20px;
+	  	margin-left: 10px;
+	  	/*position: absolute;
+	  	bottom: 0px;*/
+
+	  }
+	 
+	  .resource_item .resource_pic img{
+	  	width: 100%;
+	  	height: 100%;
+	  }
+	  .resource_item .resource_text{
+	  	display: inline-block;
+	  	width: 64%;
+	  	height: 170px;
+	  	/*border: black 1px solid;*/
+	  	margin: 10px;
+	  	position: absolute;
+		right: 0px;
+		top: 30px;
+	  }
+		.resource_item .resource_bottom{
+	  	display: inline-block;
+	  	width: 64%;
+	  	height: 30px;
+	  	/*border: black 1px solid;*/
+	  	margin: 10px;
+	  	position: absolute;
+		right: 0px;
+		bottom: 0px;
+	  }
+	  .resource_bottom div{
+	  	display: inline-block;
+
+	  }
+	  .resource_bottom .resource_time{
+	   position: absolute;
+	  	right: 0px;
+
+	  }
+	   img:hover{
+	  	cursor: pointer;
+	  	opacity:0.7;
+		filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+	  }
+

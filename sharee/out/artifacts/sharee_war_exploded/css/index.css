@@ -1,0 +1,158 @@
+*{
+			padding: 0px;
+			margin: 0px;
+			border: black 0px solid;
+		}
+		.context{
+			width: 1200px;
+			margin: 0px auto;
+			height: auto;
+			position: relative;
+		}
+		.context_left{
+			position: relative;
+			width: 880px;
+			height: auto;
+			/*border: black 1px solid ;*/
+		}
+		.context_right{
+			overflow: hidden;
+			position: absolute;
+			width: 300px;
+			height: 900px;
+			top: 0px;
+			/*border: black 1px solid ;*/
+			right: 0px;
+		}
+		.ad{
+			height: 400px;
+			/*border: red 1px solid ;*/
+		}
+	
+	  .el-carousel__item:nth-child(2n) {
+	     background-color: #99a9bf;
+
+	  }
+	  
+	  .el-carousel__item:nth-child(2n+1) {
+	     background-color: #d3dce6;
+	  }
+	  .ad img{
+	  	width:100%;
+	  	height: 100%;
+	  	/*background-repeat:no-repeat ;*/
+		object-fit: cover;
+	  }
+	  .resource{
+	  	margin-top: 20px;
+	  	width: 100%;
+	  	/*border: red 1px solid;*/
+	  }
+	  .title{
+	  	width: 100%;
+	  	height: 25px;
+	  	font-size: 18px;
+	  	margin: 0px auto;
+	  	/*padding: 10px;*/
+	  	border-bottom: black 1px solid;
+	  	position: relative;
+	  }
+	  .title div{
+	  	position: absolute;
+	  }
+	  .title .more{
+	  	display: inline-block;
+	  	position: absolute;
+	  	text-decoration: none;	  	
+	  	right: 0px;
+		color: #000;
+	  }
+	  .resource_item{
+	  	display: inline-block;
+	  	margin: 10px;
+	  	margin-right: 8px;
+	 	width: 222px;
+	 	height:330px;
+	 	/*border: #eee 1px solid ;*/
+	  }
+	  .resource_item img{
+	  	width: 210px;
+	  	height:280px;
+	  	/*background-size: 100% 100%;*/
+	  	object-fit: cover;
+	  }
+	  .resource_item div{
+	  	font-size: 16px;
+	  	width: 220px;
+	 	height: 22px;
+	 	overflow: hidden;
+	  }
+	  .new_resource_item{
+	  	width: 90%;
+	  	margin: 0px auto;
+	  	height: 150px;
+	  	position: relative;
+
+	  	border-bottom: #f2f2f2 1px solid;
+	  	margin-bottom: 20px;
+	  }
+	  .new_resource_item .resource_pic{
+	  	display: inline-block;
+		width: 100%;
+		height:100%;
+		object-fit: cover;
+		position: absolute;
+		left: 0px;
+	  }
+	  /*.new_resource_item .right{
+	  	display: inline-block;
+	  	width: 45%;
+	  	height: 95%;
+	  	position: absolute;
+		right: 0px;
+	  }*/
+	  .new_resource_item .resource_title{
+	  	width: 100%;
+	  	height: 20px;
+	  	position: absolute;
+	  	overflow: hidden;
+	  	bottom: 0px;
+	  	left:0px;
+	  	margin: 5px;
+	  	color: #fff;
+
+	  }
+	  .new_resource_item .resource_time{
+	  	width: 100%;
+	  	height: 30px;
+	  	text-align: right;
+	  	color:#999;
+	  }
+
+	  .time_resource{
+	  	width: 100%;
+	  	height: 520px;
+	  	/*border: red 1px solid;*/
+	  	margin-top: 40px;
+	  	overflow: hidden;
+	  }
+	  #resource_all{
+	  	width: 1200px;
+	  	margin: auto;
+	  	margin-top: 40px;
+	  	/*position: relative;*/
+	  }
+	  .hot_resource_item{
+	  	width: 200px;
+	 	height:200px;
+
+	  }
+	  .hot_resource_item img{
+	  	width: 200px;
+	  	height: 200px;
+	  }
+	  img:hover{
+	  	cursor: pointer;
+	  	opacity:0.7;
+		filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+	  }

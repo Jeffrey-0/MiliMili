@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="../js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body background="../img/1.jpg">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 my-5">
+            <div class="card my-5">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h2 class="h4 text-gray-900 mb-4">登录</h2>
+                    </div>
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user"
+                                   id="username" placeholder="请输入用户名" name="username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-user"
+                                   id="password" placeholder="请输入密码" name="password">
+                        </div>
+                        <a class="btn btn-primary btn-user btn-block" type="submit"
+                           id="formBtn1"> 登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer-margin">
+        <p class="text-center my-1">© 2019 All Rights Reserved.</p>
+    </div>
+</div>
+</body>
+<script>
+    function check() {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        if (username === "")
+        {
+            Swal.fire({
+                type:'error',
+                title:'用户名不能为空！',
+                confirmButtonColor:'#007bff',
+                confirmButtonText:'确认'
+            })
+            return false;
+        }
+        if (password === "")
+        {
+            Swal.fire({
+                type:'error',
+                title:'密码不能为空！',
+                confirmButtonColor:'#007bff',
+                confirmButtonText:'确认'
+            })
+            return false;
+        }
+        return true;
+    }
+    $("#formBtn1").click(function (){
+        if (check()){
+            $.ajax({
+                type:"post",
+                url:"../AdminServlet?method=adminLogin",//来源判断
+                data:$("#form").serialize(),
+                dataType:"json",
+                success:function (response) {
+                    if (response.status === "0")
+                    {
+                        Swal.fire({
+                            type:"error",
+                            title:"密码输入有误",
+                            confirmButtonColor:"#007bff",
+                            confirmButtonText:"确认"
+                        })
+                    }
+                    if (response.status === "1")
+                    {
+                        Swal.fire({
+                            type:"success",
+                            title:"欢迎"+response.message,
+                            confirmButtonColor:"#007bff",
+                            confirmButtonText:"确认",
+                            timer:1500
+                        }).then((result) => {
+                            window.location.replace("../AdminServlet?method=indexJsp");
+                        });
+                    }
+                }
+            })
+        }
+
+    })
+</script>
+</html>

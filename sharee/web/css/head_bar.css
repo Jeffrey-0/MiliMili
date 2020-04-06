@@ -1,0 +1,102 @@
+body{
+	height:235px;
+}
+body>div>div{
+			margin-bottom: 20px;
+		}
+		*{
+			padding: 0;
+			margin: 0;
+
+		}
+		ul{
+			list-style-type: none;
+			display: inline-block;
+		}
+		li{
+			display: inline-block;
+
+
+		}
+		a{
+			font-size:14px;
+			color: #fff;
+			text-decoration: none;
+		}
+		.top_bar,.headerLayout,#type_bar{
+
+			position: relative;
+			width: 1200px;
+			
+			margin: 0 auto;
+		}
+		.top_bar{
+			padding:10px;
+			margin-bottom: 50px;
+		}
+
+		.top_left{
+			position: absolute;
+			left: 0;
+		}
+		.top_left>li{
+			margin-right: 10px;
+		}
+
+		.top_right{
+			position: absolute;
+			right: 0;
+		}
+		.top_right>li{
+			margin-left: 10px;
+		}
+		.headerLayout>div{
+			position: absolute;
+		}
+		.logo{
+			display: inline-block;
+			width: 220px;
+			height: 95px;
+			background-size: 100% 100%;
+		}
+		.search{
+			left: 400px;
+			width: 400px;
+		}
+		.upload{
+			right: 0px;	
+			border: #C0C4CC 1px solid;
+			margin-top: 10px;
+		}
+		.upload>a{
+			display: inline-block;
+			width: 100px;
+			padding: 10px;
+			font-size: 18px;
+			text-align: center;
+			/*color: #2f2f2f;*/
+		}
+		.el-tabs__content>div{
+			display: none;
+		}
+	iframe
+	{
+		width: 100%;
+		border: red 0 solid;
+		padding: 0;
+		height: 1500px;
+
+	}
+	  .el-select .el-input {
+    width: 130px;
+  }
+  .input-with-select .el-input-group__prepend {
+    background-color: #fff;
+  }
+  .bg{
+  	width: 100%;
+  	height: 180px; 	
+  	background-repeat:no-repeat ;
+	background-attachment: fixed;
+	background-size: 100% 180px;
+  }
